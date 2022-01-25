@@ -8,7 +8,7 @@ let mongoport = process.env.mongoport || 27017;
 let mongouser = process.env.MONGO_USERNAME || 'user';
 let mongopass = process.env.MONGO_PASSWORD || 'pass';
 
-mongoose.connect(`mongodb://${mongouser}:${mongopass}@${mongohost}:${mongoport}/aMagicDB`, {useNewUrlParser: true});
+mongoose.connect(`mongodb://${mongouser}:${mongopass}@${mongohost}:${mongoport}/appdb`, {useNewUrlParser: true});
 
 
 const app = express();
