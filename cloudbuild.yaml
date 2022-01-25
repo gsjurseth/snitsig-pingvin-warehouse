@@ -9,6 +9,6 @@ steps:
 # Deploy container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['run', 'deploy', 'wh', '--image', 'gcr.io/$PROJECT_ID/wh', '--region', '$_REGION','--vpc-connector','vpc-connector','--vpc-egress','all','--update-env-vars','mongohost=10.132.0.58,mongoport=27017,MONGO_USERNAME=appuser,MONGO_PASSWORD=apppwd']
+  args: ['run', 'deploy', 'wh', '--image', 'gcr.io/$PROJECT_ID/wh', '--region', '$_REGION','--vpc-connector','vpc-connector','--vpc-egress','all','--update-env-vars','mongohost=10.132.0.2,mongoport=27017,MONGO_USERNAME=appuser,MONGO_PASSWORD=apppwd']
 images:
 - gcr.io/$PROJECT_ID/wh
